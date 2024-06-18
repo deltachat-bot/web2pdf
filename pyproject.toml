@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web2pdf"
+description = "Download websites as PDF in Delta Chat"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["deltachat", "bot", "web", "pdf"]
+authors = [
+  {name = "adbenitez", email = "adb@merlinux.eu"},
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+dependencies = [
+    "deltabot-cli>=6.2.0,<7.0",
+    "pdfkit",
+]
+
+[project.urls]
+Homepage = "https://github.com/deltachat-bot/web2pdf"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "mypy",
+  "isort",
+  "pylint",
+  "pylama",
+  "pytest",
+  "types-requests",
+]
+
+[project.scripts]
+web2pdf = "web2pdf:main"
+
+[tool.setuptools_scm]
+# can be empty if no extra settings are needed, presence enables setuptools_scm
+version_file = "web2pdf/_version.py"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = "True"
