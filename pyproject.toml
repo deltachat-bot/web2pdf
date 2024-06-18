@@ -3,7 +3,7 @@ requires = ["setuptools>=64", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "web2pdf"
+name = "deltabot-web2pdf"
 description = "Download websites as PDF in Delta Chat"
 dynamic = ["version"]
 readme = "README.md"
@@ -37,11 +37,11 @@ dev = [
 ]
 
 [project.scripts]
-web2pdf = "web2pdf:main"
+web2pdf = "deltabot_web2pdf:main"
 
 [tool.setuptools_scm]
 # can be empty if no extra settings are needed, presence enables setuptools_scm
-version_file = "web2pdf/_version.py"
+version_file = "deltabot_web2pdf/_version.py"
 
 [tool.isort]
 profile = "black"

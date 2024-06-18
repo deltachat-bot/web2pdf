@@ -1,6 +1,6 @@
 # Web to PDF
 
-[![Latest Release](https://img.shields.io/pypi/v/web2pdf.svg)](https://pypi.org/project/web2pdf)
+[![Latest Release](https://img.shields.io/pypi/v/deltabot-web2pdf.svg)](https://pypi.org/project/deltabot-web2pdf)
 [![CI](https://github.com/deltachat-bot/web2pdf/actions/workflows/python-ci.yml/badge.svg)](https://github.com/deltachat-bot/web2pdf/actions/workflows/python-ci.yml)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
@@ -10,7 +10,7 @@ in private or add it to get a PDF in any message containing an URL.
 ## Install
 
 ```sh
-pip install web2pdf
+pip install deltabot-web2pdf
 ```
 
 You also need to install wkhtmltopdf package. Debian/Ubuntu example:
